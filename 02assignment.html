@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Haven</title>
+    <style>
+        body {
+            font-family:Lucida ,Sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(72, 190, 245);
+            color:brown;
+            text-align: center;
+        }
+        header {
+            background-color: #6f4e37;
+            padding: 40px;
+            color: rgb(241, 13, 13);
+            background-image:url("https://www.pixelstalk.net/wp-content/uploads/2016/05/Coffee-Wallpapers-High-Quality.jpg");
+            background-size: cover;
+            background-position: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            padding:40px 20px;
+        }
+        
+        
+        h1{
+           color:rgb(255, 246, 240);
+           font-style: italic;
+           font-family:broadway;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin:0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover{
+            color:#ffcc00;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        #menu{
+            background: #8ab6d6;
+            padding:50px 20px;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            font-family:cursive;
+        }
+        h2{
+            font-family:Arial black;
+            color: #6f4e37;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 3px solid #6f4e37;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .menu-item {
+            background-color: #d7ccc8;
+            padding: 15px;
+            margin: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: transform 0.3s,background-color 0.3s;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+        .menu-item img{
+            display: block;
+            width: 300px;
+            height:200px;
+            margin-top: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(214, 90, 90, 0.5);
+        }
+        .menu-item:hover{
+            transform:scale(1.05);
+            background-color: #a1887f;
+            color:white;
+        }
+        .contact{
+            padding:10px;
+            margin:10px;
+            background-color:#ffe0b2;
+            display:inline-block;
+            border-radius: 10px;
+            box-shadow:2px 2px 5px rgba(0, 0, 0, 0.2);
+            color: rgb(234, 56, 154);
+            
+        }
+        #about{
+            background-color: #f8f1e4;
+            padding: 40px 20px;
+            border-radius: 10px;
+        }
+        .contact-box{
+            background: #ffcc99;
+            padding:15px;
+            display:inline-block;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        footer {
+            background-color: #2aa0fa;
+            color: white;
+            padding: 15px;
+            position:relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Brewed Awakening</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <section id="menu">
+        <h2>Our Coffee Menu</h2>
+        <div class="menu-container">
+            
+            <div class="menu-item">Espresso <img src="https://images.unsplash.com/photo-1587734361993-0033759da68b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9"></div>
+            <div class="menu-item">Cappuccino <img src="https://tse4.mm.bing.net/th?id=OIP.zBhnw1zH8lnSABXPCORfQgHaEK&pid=Api&P=0&h=180"></div>
+            <div class="menu-item">Latte <img src="https://tse1.mm.bing.net/th?id=OIP.4KAM6OXq5dxqjN8KwksURQHaGQ&pid=Api&P=0&h=180"></div>
+            <div class="menu-item">Mocha <img src="https://tse1.mm.bing.net/th?id=OIP.zcTgbFx5pJS--cdMAE-c0gHaFj&pid=Api&P=0&h=180"></div>
+            <div class="menu-item">Americano <img src="https://cdn.buttercms.com/AB7ud4YSE6nmOX0iGlgA"></div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Coffee Haven,where we serve the finest coffee in town.<br> Our beans are sourced from the best farms<br> and brewed to perfection.</p>
+    </section>
+    
+    <section id="contact">
+        <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@coffeehaven.com</p>
+        <p>Phone:2345678901</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Coffee Haven.</p>
+    </footer>
+</body>
+</html>
